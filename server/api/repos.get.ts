@@ -17,7 +17,7 @@ interface ProjectRepo {
   language: string | null
 }
 
-const GITHU_API_URL = 'https://api.github.com/users/sebastiandotdev'
+const GITHU_API_URL = 'https://api.github.com/users/joansebgarcia'
 
 export default defineEventHandler(async (): Promise<ProjectRepo[]> => {
   const repos = await $fetch<GitHubRepo[]>(`${GITHU_API_URL}/repos`, {

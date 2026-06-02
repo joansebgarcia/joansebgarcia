@@ -1,6 +1,6 @@
 export const SOCIAL_LINKS = {
   LINKEDIN: 'https://linkedin.com/in/sebastiandotdev',
-  GITHUB: 'https://github.com/joansebastiangarcia',
+  GITHUB: 'https://github.com/joansebgarcia',
   GMAIL: 'mailto:joangarcia.dev@gmail.com',
 } as const
 

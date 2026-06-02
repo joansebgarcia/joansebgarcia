@@ -7,5 +7,5 @@ Wanna talk about something? Message me on Email [joangarcia.dev@gmail.com](mailt
 You can find me on:
 
 - [My website: joangarcia.dev](https://joangarcia.dev/)
-- [GitHub as @joansebastiangarcia (you are here)](https://github.com/joansebastiangarcia)
+- [GitHub as @joansebgarcia (you are here)](https://github.com/joansebgarcia)
 - [LinkedIn](https://linkedin.com/in/sebastiandotdev)

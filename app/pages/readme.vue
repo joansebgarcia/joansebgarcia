@@ -94,7 +94,7 @@ const { t } = useI18n()
         <div class="p-4 bg-black/2 dark:bg-white/2">
           <pre
             class="text-sm text-black/80 dark:text-white/80 leading-relaxed overflow-x-auto"
-          ><code><span class="text-black/40 dark:text-white/30 select-none">$</span> <span class="text-emerald-600 dark:text-emerald-400">git clone</span> https://github.com/sebastiandotdev/sebastiandotdev.git
+          ><code><span class="text-black/40 dark:text-white/30 select-none">$</span> <span class="text-emerald-600 dark:text-emerald-400">git clone</span> https://github.com/joansebgarcia/joangarcia.dev.git
 <span class="text-black/40 dark:text-white/30 select-none">$</span> <span class="text-emerald-600 dark:text-emerald-400">cd</span> sebastiandotdev
 <span class="text-black/40 dark:text-white/30 select-none">$</span> <span class="text-emerald-600 dark:text-emerald-400">pnpm</span> install
 <span class="text-black/40 dark:text-white/30 select-none">$</span> <span class="text-emerald-600 dark:text-emerald-400">pnpm</span> dev</code></pre>
