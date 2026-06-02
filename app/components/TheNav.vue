@@ -33,7 +33,7 @@ const navLinks = [
       to="/"
       class="relative px-6 border-r border-[#e5e5e5] dark:border-[#262626] flex items-center text-[17px] tracking-[-0.15px] font-bold text-black dark:text-white shrink-0"
     >
-      sebastiandotdev
+      Joan Garcia
     </NuxtLink>
 
     <!-- Navigation -->
