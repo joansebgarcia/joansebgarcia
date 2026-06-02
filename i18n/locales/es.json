@@ -2,7 +2,7 @@
   "$schema": "../schema.json",
   "seo": {
     "home": {
-      "title": "sebastiandotdev - Ingeniero de Software"
+      "title": "Joan Garcia - Ingeniero de Software"
     }
   },
   "nav": {
@@ -32,7 +32,7 @@
   },
   "hero": {
     "title": "Hola, soy Joan Sebastian.",
-    "subtitle": "Desarrollador de Software con +4 años de experiencia profesional.",
+    "subtitle": "Desarrollador de Software con +5 años de experiencia profesional.",
     "subtitle2": "Apasionado del Código Abierto.",
     "current_work": "Actualmente trabajando en",
     "cta": "Dile hola"
