@@ -25,5 +25,4 @@ This project follows the **Nuxt 4** directory structure.
 
 ## Agent Integration
 
-- The project includes specific instructions for Gemini in `.gemini/skills/`. Use these skills when working on Nuxt or UnoCSS related tasks.
 - **Strict Policy:** Do not automatically execute any `package.json` scripts or CLI commands after finishing a task.

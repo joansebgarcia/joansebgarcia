@@ -7,7 +7,6 @@ const skills: string[] = [
   'Git',
   'SQL',
   'Docker',
-  'Gemini',
   'Software Engineer',
 ]
 </script>
