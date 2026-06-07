@@ -14,17 +14,6 @@ const skills: string[] = [
 <template>
   <div class="font-mono h-dvh overflow-hidden flex flex-col justify-between">
     <main class="max-w-2xl mx-auto px-6 pt-0 sm:pt-25 relative container flex flex-col">
-      <!-- Avatar -->
-      <span
-        class="inline-flex items-center justify-center shrink-0 select-none rounded-full align-middle size-20 ring-1 ring-[#e5e5e5] dark:ring-[#262626]"
-      >
-        <img
-          src="/sebastiandotdev.jpeg"
-          :alt="$t('hero.title')"
-          class="h-full w-full rounded-[inherit] object-cover"
-        >
-      </span>
-
       <!-- Introduction -->
       <div class="mt-6 flex flex-col gap-1.5">
         <p class="text-xs text-black/40 dark:text-white/30 select-none">
