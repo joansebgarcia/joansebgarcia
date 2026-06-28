@@ -94,7 +94,7 @@ const { t } = useI18n()
         <div class="p-4 bg-black/2 dark:bg-white/2">
           <pre
             class="text-sm text-black/80 dark:text-white/80 leading-relaxed overflow-x-auto"
-          ><code><span class="text-black/40 dark:text-white/30 select-none">$</span> <span class="text-emerald-600 dark:text-emerald-400">git clone</span> https://github.com/joansebgarcia/joangarcia.dev.git
+          ><code><span class="text-black/40 dark:text-white/30 select-none">$</span> <span class="text-emerald-600 dark:text-emerald-400">git clone</span> https://github.com/joansebgarcia/joansebgarcia.git
 <span class="text-black/40 dark:text-white/30 select-none">$</span> <span class="text-emerald-600 dark:text-emerald-400">cd</span> sebastiandotdev
 <span class="text-black/40 dark:text-white/30 select-none">$</span> <span class="text-emerald-600 dark:text-emerald-400">pnpm</span> install
 <span class="text-black/40 dark:text-white/30 select-none">$</span> <span class="text-emerald-600 dark:text-emerald-400">pnpm</span> dev</code></pre>
@@ -195,47 +195,6 @@ const { t } = useI18n()
           {{ t('readme.feature_4') }}
         </li>
       </ol>
-    </section>
-
-    <!-- ### Project Structure -->
-    <section class="mb-8">
-      <h3
-        class="text-sm sm:text-base font-semibold text-default mb-3 leading-tight"
-      >
-        <span
-          class="text-emerald-500/70 dark:text-emerald-400/70 mr-2 select-none"
-        >###</span>
-        {{ t('readme.structure_title') }}
-      </h3>
-      <div
-        class="rounded-lg border border-[#e5e5e5] dark:border-[#262626] overflow-hidden"
-      >
-        <div
-          class="flex items-center gap-2 px-4 py-2 bg-black/3 dark:bg-white/3 border-b border-[#e5e5e5] dark:border-[#262626]"
-        >
-          <div
-            class="i-solar:folder-with-files-linear size-3.5 text-black/40 dark:text-white/40"
-          />
-          <span class="text-3xs text-black/40 dark:text-white/40">tree</span>
-        </div>
-        <div class="p-4 bg-black/2 dark:bg-white/2">
-          <pre
-            class="text-sm text-black/70 dark:text-white/70 leading-relaxed overflow-x-auto"
-          ><code><span class="text-emerald-600 dark:text-emerald-400">sebastiandotdev/</span>
-├── <span class="text-black/50 dark:text-white/50">app/</span>
-│   ├── components/
-│   ├── pages/
-│   └── utils/
-├── <span class="text-black/50 dark:text-white/50">i18n/</span>
-│   ├── locales/
-│   └── schema.json
-├── <span class="text-black/50 dark:text-white/50">server/</span>
-│   └── api/
-├── nuxt.config.ts
-├── uno.config.ts
-└── package.json</code></pre>
-        </div>
-      </div>
     </section>
 
     <!-- ## Inspirations & Credits -->
