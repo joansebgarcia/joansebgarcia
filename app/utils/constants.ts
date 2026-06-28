@@ -1,3 +1,5 @@
+export const GITHU_API_URL = 'https://api.github.com/users/joansebgarcia'
+
 export const SOCIAL_LINKS = {
   LINKEDIN: 'https://linkedin.com/in/sebastiandotdev',
   GITHUB: 'https://github.com/joansebgarcia',

@@ -1,18 +1,39 @@
 <script setup lang="ts">
 import { SOCIAL_LINKS } from '~/utils/constants'
 
-interface ProjectRepo {
+interface GitHubRepo {
   name: string
-  url: string
-  description: string
-  stars: number
+  html_url: string
+  description: string | null
+  stargazers_count: number
   topics: string[]
+  fork: boolean
   language: string | null
 }
 
-const { data: repos } = await useFetch<ProjectRepo[]>('/api/repos', {
+const { data } = await useFetch<GitHubRepo[]>(`${GITHU_API_URL}/repos`, {
   default: () => [],
+  query: {
+    sort: 'stars',
+    direction: 'desc',
+    per_page: 30,
+    type: 'owner',
+  },
+  headers: {
+    Accept: 'application/vnd.github.v3+json',
+  },
 })
+
+const repos = computed(() => data.value
+  .filter(repo => !repo.fork)
+  .map(repo => ({
+    name: repo.name,
+    url: repo.html_url,
+    description: repo.description ?? '',
+    stars: repo.stargazers_count,
+    topics: repo.topics,
+    language: repo.language,
+  })))
 
 const searchQuery = ref('')
 
