@@ -8,4 +8,4 @@ You can find me on:
 
 - [My website: joangarcia.dev](https://joangarcia.dev/)
 - [GitHub as @joansebgarcia (you are here)](https://github.com/joansebgarcia)
-- [LinkedIn](https://linkedin.com/in/sebastiandotdev)
+- [LinkedIn](https://linkedin.com/in/joansebgarcia)
