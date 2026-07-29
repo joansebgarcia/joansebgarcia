@@ -1,6 +1,6 @@
-# Project: sebastiandotdev
+# CLAUDE.md
 
-This is the personal website and portfolio of Joan Sebastian García (@sebastiandotdev), a software developer from Colombia.
+This is the personal website and portfolio of Joan Sebastian García (@joansebgarcia), a software developer from Colombia.
 
 ## Tech Stack
 
