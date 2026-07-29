@@ -1,4 +1,4 @@
-Hey! I'm **<a href="https://linkedin.com/in/sebastiandotdev" target="_blank">@joansebastiangarcia</a> (Joan Sebastian García)**. 👋
+Hey! I'm **<a href="https://linkedin.com/in/joansebgarcia" target="_blank">@joansebastiangarcia</a> (Joan Sebastian García)**. 👋
 
 I'm a software developer and open source enthusiast from Colombia. 🇨🇴
 
