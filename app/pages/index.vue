@@ -1,19 +1,19 @@
 <script setup lang="ts">
 import { CURRENT_WORK, SOCIAL_LINKS } from '~/utils/constants'
-
-const skills: string[] = [
-  'TypeScript',
-  'C++',
-  'Git',
-  'SQL',
-  'Docker',
-  'Software Engineer',
-]
 </script>
 
 <template>
   <div class="font-mono h-dvh overflow-hidden flex flex-col justify-between">
     <main class="max-w-2xl mx-auto px-6 pt-0 sm:pt-25 relative container flex flex-col">
+      <span
+        class="inline-flex items-center justify-center shrink-0 select-none rounded-full align-middle size-32 ring-1 ring-[#e5e5e5] dark:ring-[#262626]"
+      >
+        <img
+          src="/joan_s.jpg"
+          :alt="$t('hero.title')"
+          class="h-full w-full rounded-[inherit] object-cover"
+        >
+      </span>
       <!-- Introduction -->
       <div class="mt-6 flex flex-col gap-1.5">
         <p class="text-xs text-black/40 dark:text-white/30 select-none">
@@ -41,22 +41,6 @@ const skills: string[] = [
           {{ CURRENT_WORK.NAME }}
           <div class="i-solar:arrow-right-up-linear size-3 text-black/40 dark:text-white/30 group-hover:text-black dark:group-hover:text-white transition-colors" />
         </a>
-      </div>
-
-      <!-- Skills Section -->
-      <div class="mb-10">
-        <h2 class="text-xs font-semibold tracking-widest uppercase text-black/40 dark:text-white/30 mb-3">
-          {{ $t('stack.title') }}
-        </h2>
-        <div class="flex flex-wrap gap-2">
-          <span
-            v-for="skill in skills"
-            :key="skill"
-            class="inline-flex items-center gap-1.5 text-xs px-2.5 py-1 rounded-full border border-[#e5e5e5] dark:border-[#262626] text-black/70 dark:text-white/70 bg-black/3 dark:bg-white/5"
-          >
-            {{ skill === 'Software Engineer' ? $t('common.software_engineer') : skill }}
-          </span>
-        </div>
       </div>
 
       <!-- CTA Button -->
