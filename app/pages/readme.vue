@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 useHead({
-  title: 'README.md — sebastiandotdev',
+  title: 'README.md — joansebgarcia',
 })
 
 const { t } = useI18n()
