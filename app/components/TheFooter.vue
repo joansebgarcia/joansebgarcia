@@ -39,20 +39,6 @@ const columns = computed(() => [
     ],
   },
 ])
-
-const socialLinks = [
-  {
-    name: 'GitHub',
-    url: SOCIAL_LINKS.GITHUB,
-    icon: 'i-solar:code-square-linear',
-  },
-  {
-    name: 'LinkedIn',
-    url: SOCIAL_LINKS.LINKEDIN,
-    icon: 'i-solar:user-id-linear',
-  },
-  { name: 'Gmail', url: SOCIAL_LINKS.GMAIL, icon: 'i-solar:letter-linear' },
-]
 </script>
 
 <template>
@@ -63,28 +49,12 @@ const socialLinks = [
     <div
       class="px-6 py-8 flex flex-col sm:flex-row gap-8 sm:gap-0 justify-between"
     >
-      <!-- Left: logo + social icons -->
-      <div class="flex flex-col gap-4">
-        <NuxtLink
-          to="/"
-          class="text-sm font-bold text-black dark:text-white hover:text-black/70 dark:hover:text-white/70 transition-colors tracking-tight"
-        >
-          {{ $t('footer.logo') }}
-        </NuxtLink>
-        <div class="flex items-center gap-3">
-          <a
-            v-for="link in socialLinks"
-            :key="link.name"
-            :href="link.url"
-            target="_blank"
-            rel="noopener noreferrer"
-            :aria-label="link.name"
-            class="text-black/40 dark:text-white/30 hover:text-black dark:hover:text-white transition-colors"
-          >
-            <div :class="link.icon" class="size-4" />
-          </a>
-        </div>
-      </div>
+      <NuxtLink
+        to="/"
+        class="text-sm font-bold text-black dark:text-white hover:text-black/70 dark:hover:text-white/70 transition-colors tracking-tight"
+      >
+        {{ $t('footer.logo') }}
+      </NuxtLink>
 
       <!-- Right: link columns -->
       <div class="flex flex-wrap gap-8 sm:gap-12">
