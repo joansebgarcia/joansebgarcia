@@ -9,7 +9,7 @@ import { CURRENT_WORK, SOCIAL_LINKS } from '~/utils/constants'
         class="inline-flex items-center justify-center shrink-0 select-none rounded-full align-middle size-32 ring-1 ring-[#e5e5e5] dark:ring-[#262626]"
       >
         <img
-          src="/joan_s.jpg"
+          src="/joan.jpg"
           :alt="$t('hero.title')"
           class="h-full w-full rounded-[inherit] object-cover"
         >
