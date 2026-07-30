@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+:root:not([data-theme="light"]),
+:root[data-theme="dark"] {
+  --background: oklch(0.171 0 0);
+  --foreground: oklch(0.982 0 0);
+}
+
+:root[data-theme="light"] {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.146 0 0);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-mono: var(--font-geist-mono), "IBM Plex Sans Arabic", monospace;
+  --spacing: 4px;
+  --text-2xs: 0.6875rem;
+  --text-3xs: 0.625rem;
+  --text-4xs: 0.5625rem;
+  --text-5xs: 0.5rem;
+}
+
+@utility btn {
+  @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*="size-"])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:ring-[3px] px-4 py-2 max-w-min;
+}
+
+@utility btn-default {
+  @apply bg-black hover:bg-black/90 text-white dark:bg-white dark:hover:bg-white/90 dark:text-black;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  @apply scroll-pt-20;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  /* Offset for fixed header - otherwise anchor headers are cutted */
+  scrollbar-gutter: stable;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background);
+  color: var(--foreground);
+  line-height: 1.6;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
