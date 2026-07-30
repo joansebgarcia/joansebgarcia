@@ -1,36 +1,32 @@
 {
   "name": "joansebgarcia",
-  "type": "module",
+  "version": "0.1.0",
   "private": true,
   "packageManager": "pnpm@11.2.2",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "fmt": "eslint . --fix",
-    "lint": "eslint",
-    "postinstall": "nuxt prepare"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
   },
   "dependencies": {
-    "@nuxt/fonts": "0.14.0",
-    "@nuxtjs/color-mode": "4.0.0",
-    "@nuxtjs/i18n": "^10.3.0",
-    "@vueuse/core": "14.2.1",
-    "@vueuse/nuxt": "14.2.1",
-    "nuxt": "4.4.2",
-    "vue": "3.5.32",
-    "vue-router": "5.0.4"
+    "@iconify/react": "^6.0.2",
+    "next": "16.2.12",
+    "next-intl": "^4.13.4",
+    "next-themes": "^0.4.6",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^9.0.0",
     "@iconify-json/circle-flags": "^1.2.10",
-    "@iconify-json/logos": "^1.2.11",
-    "@iconify-json/solar": "1.2.5",
-    "@iconify/utils": "3.1.0",
-    "@nuxt/eslint": "^1.15.2",
-    "@unocss/nuxt": "66.6.8",
-    "eslint": "^10.4.0",
-    "unocss": "66.6.8"
+    "@iconify-json/solar": "^1.2.5",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.12",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
