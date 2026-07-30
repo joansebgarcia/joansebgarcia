@@ -1,28 +1,7 @@
 # CLAUDE.md
 
-This is the personal website and portfolio of Joan Sebastian García (@joansebgarcia), a software developer from Colombia.
+<!-- BEGIN:nextjs-agent-rules -->
+# This is NOT the Next.js you know
 
-## Tech Stack
-
-- **Framework:** [Nuxt 4](https://nuxt.com/) (Vue 3)
-- **Styling:** [UnoCSS](https://unocss.dev/) with `presetWind4`
-- **Internationalization:** [@nuxtjs/i18n](https://i18n.nuxtjs.org/) (English & Spanish)
-- **Icons:** [Iconify](https://iconify.design/) (Solar set via `@iconify-json/solar`)
-- **Fonts:** [Geist](https://vercel.com/font) (Sans & Mono)
-- **Tooling:** [oxlint](https://oxc-project.github.io/docs/guide/usage/linter.html) & [oxfmt](https://oxc-project.github.io/docs/guide/usage/formatter.html)
-- **Package Manager:** `pnpm`
-
-## Architecture & Directory Structure
-
-This project follows the **Nuxt 4** directory structure.
-
-## Development Conventions
-
-- **Styling:** Use UnoCSS utility classes. Avoid custom CSS unless necessary (use `uno.config.ts` for theme extensions).
-- **Internationalization:** Always use `$t()` for user-facing strings. Locales are managed in `i18n/locales/`. All changes to locale files MUST respect the structure defined in `i18n/schema.json`. Update the schema if new keys or sections are added.
-- **Components:** Follow the `TheComponent.vue` naming convention for singleton components (layouts/nav) and `BaseComponent.vue` or descriptive names for others.
-- **TypeScript:** Use `<script lang="ts" setup>` for all Vue components.
-
-## Agent Integration
-
-- **Strict Policy:** Do not automatically execute any `package.json` scripts or CLI commands after finishing a task.
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
+<!-- END:nextjs-agent-rules -->
