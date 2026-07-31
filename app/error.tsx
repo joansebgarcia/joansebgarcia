@@ -1,16 +1,19 @@
-"use client";
+'use client'
 
-import { useTranslations } from "next-intl";
-import { useRouter } from "next/navigation";
+import { useTranslations } from 'next-intl'
+import Link from 'next/link'
 
-export default function Error({ error }: { error: Error & { digest?: string } }) {
-  const t = useTranslations();
-  const router = useRouter();
+export default function Error({
+  error,
+}: {
+  error: Error & { digest?: string }
+}) {
+  const t = useTranslations()
 
   return (
     <main className="flex-1 flex flex-col items-center justify-center py-20 px-6 text-center font-mono">
       <h1 className="text-2xl sm:text-3xl font-medium mb-4 text-black dark:text-white">
-        {t("error.default")}
+        {t('error.default')}
       </h1>
 
       {error.message && (
@@ -19,9 +22,9 @@ export default function Error({ error }: { error: Error & { digest?: string } })
         </p>
       )}
 
-      <button type="button" onClick={() => router.push("/")} className="btn btn-default">
-        {t("common.go_back_home")}
-      </button>
+      <Link href="/" className="btn btn-default">
+        {t('common.go_back_home')}
+      </Link>
     </main>
-  );
+  )
 }

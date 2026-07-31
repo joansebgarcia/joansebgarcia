@@ -1,13 +1,11 @@
-"use client";
-
-import { Icon } from "@iconify/react";
-import { useTranslations } from "next-intl";
-import Image from "next/image";
-import { Footer } from "@/components/footer";
-import { CURRENT_WORK, SOCIAL_LINKS } from "@/lib/constants";
+import { Icon } from '@iconify/react'
+import { useTranslations } from 'next-intl'
+import Image from 'next/image'
+import { Footer } from '@/components/footer'
+import { CURRENT_WORK, SOCIAL_LINKS } from '@/lib/constants'
 
 export default function HomePage() {
-  const t = useTranslations();
+  const t = useTranslations()
 
   return (
     <div className="font-mono h-dvh overflow-hidden flex flex-col justify-between">
@@ -16,7 +14,7 @@ export default function HomePage() {
           <Image
             src="/joan.jpg"
             loading="eager"
-            alt={t("hero.title")}
+            alt={t('hero.title')}
             width={128}
             height={128}
             className="h-full w-full rounded-[inherit] object-cover"
@@ -24,19 +22,25 @@ export default function HomePage() {
         </span>
 
         <div className="mt-6 flex flex-col gap-1.5">
-          <p className="text-xs text-black/40 dark:text-white/30 select-none">~/</p>
+          <p className="text-xs text-black/40 dark:text-white/30 select-none">
+            ~/
+          </p>
           <h1 className="text-2xl font-bold text-black dark:text-white leading-tight">
-            {t("hero.title")}
+            {t('hero.title')}
           </h1>
           <div className="text-sm text-black/60 dark:text-[#f0f7ff9e] leading-relaxed space-y-0.5 mt-1">
-            <p>{t("hero.subtitle")}</p>
-            <p>{t("hero.subtitle2")}</p>
+            <p>{t('hero.subtitle')}</p>
+            <p>{t('hero.subtitle2')}</p>
           </div>
         </div>
 
         <div className="mt-6 mb-10 flex items-center gap-2 text-sm">
-          <span className="text-black/40 dark:text-white/30">{t("hero.current_work")}</span>
-          <span className="text-black/20 dark:text-white/15 select-none">→</span>
+          <span className="text-black/40 dark:text-white/30">
+            {t('hero.current_work')}
+          </span>
+          <span className="text-black/20 dark:text-white/15 select-none">
+            →
+          </span>
           <a
             href={CURRENT_WORK.LINK}
             target="_blank"
@@ -58,12 +62,12 @@ export default function HomePage() {
           className="btn btn-default"
         >
           <Icon icon="solar:letter-linear" className="size-4" />
-          {t("hero.cta")}
+          {t('hero.cta')}
         </a>
       </main>
       <div className="justify-end">
         <Footer />
       </div>
     </div>
-  );
+  )
 }

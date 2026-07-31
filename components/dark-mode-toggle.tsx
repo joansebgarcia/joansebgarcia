@@ -1,28 +1,28 @@
-"use client";
+'use client'
 
-import { useSyncExternalStore } from "react";
-import { useTheme } from "next-themes";
-import { useTranslations } from "next-intl";
+import { useSyncExternalStore } from 'react'
+import { useTheme } from 'next-themes'
+import { useTranslations } from 'next-intl'
 
-const emptySubscribe = () => () => {};
+const emptySubscribe = () => () => {}
 
 function useMounted() {
   return useSyncExternalStore(
     emptySubscribe,
     () => true,
-    () => false,
-  );
+    () => false
+  )
 }
 
 export function DarkModeToggle() {
-  const { theme, setTheme } = useTheme();
-  const t = useTranslations();
-  const mounted = useMounted();
+  const { theme, setTheme } = useTheme()
+  const t = useTranslations()
+  const mounted = useMounted()
 
-  const isDark = mounted && theme === "dark";
+  const isDark = mounted && theme === 'dark'
 
   function toggle() {
-    setTheme(theme === "dark" ? "light" : "dark");
+    setTheme(theme === 'dark' ? 'light' : 'dark')
   }
 
   return (
@@ -35,9 +35,9 @@ export function DarkModeToggle() {
       <div className="absolute inset-0 bg-black/5 dark:bg-white/5 -z-50 hidden group-hover:block" />
       {mounted
         ? isDark
-          ? t("nav.theme_light").toLowerCase()
-          : t("nav.theme_dark").toLowerCase()
-        : t("nav.theme_dark").toLowerCase()}
+          ? t('nav.theme_light').toLowerCase()
+          : t('nav.theme_dark').toLowerCase()
+        : t('nav.theme_dark').toLowerCase()}
     </button>
-  );
+  )
 }
