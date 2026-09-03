@@ -12,7 +12,6 @@ export function Nav() {
 
   const navLinks = [
     { label: t('nav.projects'), href: '/projects', external: false },
-    { label: t('nav.readme'), href: '/readme', external: false },
     { label: t('nav.blog'), href: '/blog', external: false },
     { label: t('nav.github'), href: SOCIAL_LINKS.GITHUB, external: true },
   ]
